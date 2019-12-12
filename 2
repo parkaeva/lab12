@@ -1,0 +1,26 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+float Sign(float X)
+{
+    if (X<0)
+    {
+        return -1;
+    } else if(X==0)
+    {
+        return 0;
+    } else if (X>0)
+    {
+        return 1;
+    }
+}
+
+int main()
+{
+    float A, B, X;
+    cin>>A>>B;
+    Sign(X);
+    cout<<Sign(A)+Sign(B);
+    
+    return 0;
+}
