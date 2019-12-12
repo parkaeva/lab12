@@ -1,0 +1,17 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+float RingS(float r1, float r2)
+{
+    float s, pi;
+    pi=3.14;
+    s=pi*(pow(r1, 2)-pow(r2, 2));
+    cout<<s;
+}
+int main()
+{
+    float r1, r2;
+    cin>>r1>>r2;
+    RingS(r1, r2);
+    return 0;
+}
