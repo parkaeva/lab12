@@ -1,0 +1,27 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int Quarter(float x, float y)
+{
+    setlocale(LC_ALL, " ");
+    if (x>0 && y>0)
+    {
+        cout<<"1 четверть";
+    } else if(x<0 && y>0)
+    {
+        cout<<"2 четверть";
+    } else if(x<0 && y<0)
+    {
+        cout<<"3 четверть";
+    } else if(x>0 && y<0)
+    {
+        cout<<"4 четверть";
+    }
+}
+int main()
+{
+    float x, y;
+    cin>>x>>y;
+    Quarter(x, y);
+    return 0;
+}
