@@ -1,0 +1,36 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+float Fact(int n)
+{
+    int k, n1, g, n2;
+    n1=1;
+    n2=1;
+    k=0;
+    g=1;
+    if (n%2==0)
+    {
+        while(k<n)
+        {
+            k+=2;
+            n1=n1*k; 
+        }
+        cout<<n1;
+    } else if(n%2!=0)
+    {
+        while(g<n)
+        {
+            g+=2;
+            n2=n2*g;
+        }
+        cout<<n2;
+    }
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    Fact(n);
+    return 0;
+}
